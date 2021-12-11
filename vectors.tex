@@ -163,49 +163,48 @@ https://github.com/praneeth2720/Assignment-1
  The mid-points of the side of triangle are (3,4) ,(4,6) and (5,7). Find the coordinates of the vertices of the triangle.
 \subsection{Solution}
 Let the mid pints of the sides of triangle are \\
-$\vec{X}_1=\myvec{3 \\ 4} \
-$\vec{X}_2=\myvec{4 \\ 6} \
-$\vec{X}_3=\myvec{5 \\ 7} \\
+\vec{P}=\myvec{3 \\ 4} \
+\vec{Q}=\myvec{4 \\ 6} \
+\vec{R}=\myvec{5 \\ 7} \\
 $Let assume coordintes of the vertices of triangle as \\
-$\vec{A}_1=\myvec{X_1\\ Y_1} \
-$\vec{B}_1=\myvec{X_2 \\ Y_2} \
-$\vec{C}_1=\myvec{X_3 \\ Y_3} \
+\vec{A}\
+\vec{B}\
+\vec{C}\
 \begin{center}
 By using section formula \\
 \end{center}
 \begin{align}
-$\vec{X}_1 &= \frac{A + B}{2}\\
-$\vec{X}_2 &= \frac{B + C}{2}\\
-$\vec{X}_3 &= \frac{A + C}{2}\\
+\frac{A + B}{2} &= $\vec{P}$  \\
+\frac{B + C}{2} &= $\vec{Q}$\\
+\frac{A + C}{2} &= $\vec{R}$\\
 \end{align}
 \begin{align}
-\myvec{3 \\ 4} &= \frac{1}{2} \myvec{x_1 + x_2 \\ y_1 + y_2}\\
-\myvec{4 \\ 6} &= \frac{1}{2} \myvec{x_2 + x_3 \\ y_2 + y_3}\\
-\myvec{5 \\ 7} &= \frac{1}{2} \myvec{x_1 + x_3 \\ y_1 + y_3}\\
+{A + B} &= $ 2\vec{P}$  \\
+{B + C} &= $2\vec{Q}$\\
+{A + C} &= $2\vec{R}$\\
 \end{align}
 
-\\ Now equating 1^{st}\\ row of matrices in each side we get\   
+\\ Let us consider the above three equations as \  
+\\ And \myvec{I & I & 0 \\ 0 & I & I \\ I & 0 & I \\ } as T 
 
 \begin{align}
-$\vec{x}_1 +$\vec{x}_2 =6\\
-$\vec{x}_2 +$\vec{x}_3 =8\\
-$\vec{x}_1 +$\vec{x}_3 =10\\
+\myvec{I & I & 0 \\ 0 & I & I \\ I & 0 & I \\ }\myvec{A  \\ B \\ C \\ } &= 2 \myvec{P  \\ Q \\ R} 
 \end{align}
 
-\\solving these three equations we get $\vec{x}_1 = 4,$\vec{x}_2 =2,$\vec{x}_3 =6.
-\\ Now equating 2^{ND}\\ row of matrices in each side we get\   
-
+\\now multiplying each side with T^{-1} 
+\ we get\\
 \begin{align}
-$\vec{y}_1 +$\vec{Y}_2 =8\\
-$\vec{y}_2 +$\vec{Y}_3=12\\
-$\vec{y}_1 +$\vec{Y}_3=14\\
+\myvec{A  \\ B \\ C \\ } &= 2\frac{1}{2} \myvec{1 & 1 & -1 \\ -1 & 1 & 1 \\ 1 & -1 & 1 \\ } \myvec{P  \\ Q \\ R}
 \end{align}
-\\solving these three equations we get $\vec{y}_1 =5,$\vec{y}_2 =3,$\vec{y}_3 =9.
-\\ \therefore $the vertices of the triangle are$\\
-$\vec{A}_1=\myvec{4 \\ 5} \
-$\vec{B}_1=\myvec{2 \\ 3} \
-$\vec{C}_1=\myvec{6 \\ 9} \\
-\includegraphics[width=\columnwidth]{download.png}
+\begin{align}
+\myvec{A  \\ B \\ C \\ } &= \myvec{P & Q & -R \\ -P & Q & R \\ P & -Q & R \\ }\\
+\myvec{A  \\ B \\ C \\ } &= \myvec{ $\myvec{4 \\ 5} \\ $\myvec{2 \\ 3} \\ $\myvec{6 \\ 9} }    
+\end{align*}
+\\ \therefore by comparing rows of each side we get the vertices of triangle.They are as follows \\
+\vec{A}=\myvec{4 \\ 5} \
+\vec{B}=\myvec{2 \\ 3} \
+\vec{C}=\myvec{6 \\ 9} \\
+\includegraphics[width=\columnwidth]{VEC.png}
 \caption{}
 \label{fig:straight lines}	
 \end{figure}
